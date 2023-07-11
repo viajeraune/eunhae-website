@@ -6,11 +6,14 @@
 
 import React from "react";
 
+import Routes from "./Routes";
+
 import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import Projects from "./Pages/Projects"; 
 
 import "./styles.css";
 
@@ -24,18 +27,18 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Alexandrie Grenier",
-  title: "Web Designer & Content Creator",
-  email: "alex@example.com",
-  gitHub: "microsoft",
-  instagram: "microsoft",
-  linkedIn: "satyanadella",
+  name: "Eunhae Lee",
+  title: "Product Manager, Designer, Strategist",
+  email: "eunhae@mit.edu",
+  gitHub: "viajeraune",
+  instagram: "",
+  linkedIn: "eunhaelee",
   medium: "",
-  twitter: "microsoft",
-  youTube: "Code",
+  twitter: "",
+  youTube: "",
 };
 
-const primaryColor = "#4E567E";
+const primaryColor = "#6d7ade";
 const secondaryColor = "#D2F1E4";
 
 const App = () => {
@@ -43,9 +46,11 @@ const App = () => {
     <div id="main">
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
-      <About />
       <Portfolio />
+      <About />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
+      <Projects />
+      {/* <Routes />  */}
     </div>
   );
 };

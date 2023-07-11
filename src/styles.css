@@ -2,16 +2,22 @@
 * CSS file to hold styles that apply across the application
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 html,
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Space Mono', monospace;
   height: 100%;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
   width: 100%;
+}
+
+/* add a smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 div#main {
@@ -46,10 +52,10 @@ section img.background {
 }
 
 h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Space Mono', monospace;
   font-size: 7rem;
   font-weight: 400;
-  line-height: 0.8;
+  line-height: 1;
   margin: 0;
 }
 
@@ -74,7 +80,7 @@ p {
 }
 
 p.large {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 p.small {
