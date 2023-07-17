@@ -48,7 +48,6 @@ const App = () => {
       <About />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
       {/* <Projects /> */}
-      {/* <Routes />  */}
     </div>
   );
 };

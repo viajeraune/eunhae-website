@@ -15,20 +15,19 @@ import Layout from "./Pages/Layout";
 import Home from "./Components/Home"; 
 import Contact from "./Pages/Contact"; 
 import NoPage from "./Pages/NoPage"; 
+import Projects from "./Pages/Projects";
 
 export default function Router() {
   return (
     <BrowserRouter>
-      {" "}
       <Routes>
-        {" "}
         <Route path="/" element={<Layout />}>
-          {" "}
-          <Route index element={<Home />} /> 
-          <Route path="contact" element={<Contact />} /> 
-          <Route path="*" element={<NoPage />} />{" "}
-        </Route>{" "}
-      </Routes>{" "}
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }

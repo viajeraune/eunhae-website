@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+// import image from "../images/design-desk.jpeg";
 
-const imageAltText = "desktop with books and laptop";
+// const imageAltText = "desktop with books and laptop";
 
 /**
  * Project list
@@ -34,13 +34,13 @@ const projectList = [
     title: "Project 1",
     description:
       "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "#projects",
+    url: "/projects",
   },
   {
     title: "Project 2",
     description:
       "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    url: "/contact",
   },
   {
     title: "My Resume Site",
@@ -61,13 +61,13 @@ const Portfolio = () => {
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Projects</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
+        {/* <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
             style={{ height: "90%", width: "100%", objectFit: "cover" }}
             alt={imageAltText}
           />
-        </div>
+        </div> */}
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>

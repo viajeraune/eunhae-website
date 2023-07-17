@@ -31,7 +31,7 @@ const imageAltText = "purple and blue abstract background";
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Product Management",
+  "AI Product Management",
   "User Experience Design",
   "Inclusive design",
   "User Research",
@@ -50,7 +50,7 @@ const skillsList = [
 const About = () => {
   return (
     <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+      {/* <img className="background" src={image} alt={imageAltText} /> */}
       <div
         style={{
           backgroundColor: "white",
@@ -70,7 +70,7 @@ const About = () => {
           style={{
             textAlign: "left",
             columns: 2,
-            fontSize: "1.25rem",
+            fontSize: "1rem",
             margin: "2rem 3rem",
             gap: "3rem",
           }}
