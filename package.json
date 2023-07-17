@@ -2,7 +2,7 @@
   "name": "eunhae-website",
   "version": "1.0.0",
   "description": "personal website of eunhae lee",
-  "source": "index.html",
+  "source": "src/index.html",
   "homepage": "https://viajeraune.github.io/eunhae-website",
   "scripts": {
     "start": "parcel",
